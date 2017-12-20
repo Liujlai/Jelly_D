@@ -1,15 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-BoldItalic</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Jelly_D" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,6 +28,74 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="273" y="34"/>
+        </scene>
+        <!--Dismiss Me Controller-->
+        <scene sceneID="dr7-3g-b7h">
+            <objects>
+                <viewController storyboardIdentifier="PresentMe" id="e7K-G2-AZN" customClass="DismissMeController" customModule="Jelly_D" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="A3c-Uk-TjX"/>
+                        <viewControllerLayoutGuide type="bottom" id="9hs-rr-53E"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WsD-FY-PpE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="300"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="tRL-vm-IcW">
+                                <rect key="frame" x="0.0" y="240" width="375" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="991-cu-ffm">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <color key="backgroundColor" red="0.9624577165" green="0.32361188530000001" blue="0.60793572659999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="26"/>
+                                        <state key="normal" title="Ok ">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="dismissMe:" destination="e7K-G2-AZN" eventType="touchUpInside" id="jxQ-1h-0zk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="yaJ-aC-eDz"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVY-uc-rPh">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="241"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jelly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hx-AH-nNq">
+                                        <rect key="frame" x="155" y="102.5" width="65.5" height="36"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.33130019900000002" green="0.31154066320000001" blue="0.73626536129999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1hx-AH-nNq" firstAttribute="centerY" secondItem="UVY-uc-rPh" secondAttribute="centerY" id="PBR-B5-mVr"/>
+                                    <constraint firstItem="1hx-AH-nNq" firstAttribute="centerX" secondItem="UVY-uc-rPh" secondAttribute="centerX" id="ndD-9H-mJ2"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="tRL-vm-IcW" firstAttribute="leading" secondItem="WsD-FY-PpE" secondAttribute="leading" id="3c1-AQ-gzY"/>
+                            <constraint firstItem="UVY-uc-rPh" firstAttribute="top" secondItem="WsD-FY-PpE" secondAttribute="top" id="Rtd-F5-I4B"/>
+                            <constraint firstItem="9hs-rr-53E" firstAttribute="top" secondItem="tRL-vm-IcW" secondAttribute="bottom" id="Z3w-zw-NmZ"/>
+                            <constraint firstItem="991-cu-ffm" firstAttribute="top" secondItem="UVY-uc-rPh" secondAttribute="bottom" constant="-1" id="cog-Zb-sQQ"/>
+                            <constraint firstAttribute="trailing" secondItem="UVY-uc-rPh" secondAttribute="trailing" id="kMj-v1-Hds"/>
+                            <constraint firstItem="UVY-uc-rPh" firstAttribute="leading" secondItem="WsD-FY-PpE" secondAttribute="leading" id="otC-Hh-Xp5"/>
+                            <constraint firstAttribute="trailing" secondItem="tRL-vm-IcW" secondAttribute="trailing" id="w8Z-P3-A2c"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0wA-oD-Q5I"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="300"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j8O-uu-Rwh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1007" y="33"/>
         </scene>
     </scenes>
 </document>

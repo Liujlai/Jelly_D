@@ -12,9 +12,14 @@
 		784B77581FEA402A00AA04A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784B77561FEA402A00AA04A8 /* Main.storyboard */; };
 		784B775A1FEA402A00AA04A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 784B77591FEA402A00AA04A8 /* Assets.xcassets */; };
 		784B775D1FEA402A00AA04A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 784B775B1FEA402A00AA04A8 /* LaunchScreen.storyboard */; };
+		784B77651FEA429500AA04A8 /* DismissMeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784B77641FEA429500AA04A8 /* DismissMeController.swift */; };
+		784B77671FEA452E00AA04A8 /* ExampleDataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784B77661FEA452E00AA04A8 /* ExampleDataFactory.swift */; };
+		C93A84466A808E29796A9571 /* Pods_Jelly_D.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E8BBB9F18B9E6263899B7D4 /* Pods_Jelly_D.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0E8BBB9F18B9E6263899B7D4 /* Pods_Jelly_D.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Jelly_D.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		70C58B4EDC4D23A2D20BF595 /* Pods-Jelly_D.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jelly_D.release.xcconfig"; path = "Pods/Target Support Files/Pods-Jelly_D/Pods-Jelly_D.release.xcconfig"; sourceTree = "<group>"; };
 		784B774F1FEA402A00AA04A8 /* Jelly_D.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Jelly_D.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		784B77521FEA402A00AA04A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		784B77541FEA402A00AA04A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,9 @@
 		784B77591FEA402A00AA04A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		784B775C1FEA402A00AA04A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		784B775E1FEA402A00AA04A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		784B77641FEA429500AA04A8 /* DismissMeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DismissMeController.swift; sourceTree = "<group>"; };
+		784B77661FEA452E00AA04A8 /* ExampleDataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleDataFactory.swift; sourceTree = "<group>"; };
+		983379513532BC80C90ACB6B /* Pods-Jelly_D.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Jelly_D.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Jelly_D/Pods-Jelly_D.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C93A84466A808E29796A9571 /* Pods_Jelly_D.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				784B77511FEA402A00AA04A8 /* Jelly_D */,
 				784B77501FEA402A00AA04A8 /* Products */,
+				A006C51E419759A61AC548ED /* Pods */,
+				FE006CF0CFAAA3C7E4CB528A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +67,31 @@
 			children = (
 				784B77521FEA402A00AA04A8 /* AppDelegate.swift */,
 				784B77541FEA402A00AA04A8 /* ViewController.swift */,
+				784B77661FEA452E00AA04A8 /* ExampleDataFactory.swift */,
+				784B77641FEA429500AA04A8 /* DismissMeController.swift */,
 				784B77561FEA402A00AA04A8 /* Main.storyboard */,
 				784B77591FEA402A00AA04A8 /* Assets.xcassets */,
 				784B775B1FEA402A00AA04A8 /* LaunchScreen.storyboard */,
 				784B775E1FEA402A00AA04A8 /* Info.plist */,
 			);
 			path = Jelly_D;
+			sourceTree = "<group>";
+		};
+		A006C51E419759A61AC548ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				983379513532BC80C90ACB6B /* Pods-Jelly_D.debug.xcconfig */,
+				70C58B4EDC4D23A2D20BF595 /* Pods-Jelly_D.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FE006CF0CFAAA3C7E4CB528A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0E8BBB9F18B9E6263899B7D4 /* Pods_Jelly_D.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +101,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 784B77611FEA402A00AA04A8 /* Build configuration list for PBXNativeTarget "Jelly_D" */;
 			buildPhases = (
+				B52E9BBB3BEF413CD4C1922A /* [CP] Check Pods Manifest.lock */,
 				784B774B1FEA402A00AA04A8 /* Sources */,
 				784B774C1FEA402A00AA04A8 /* Frameworks */,
 				784B774D1FEA402A00AA04A8 /* Resources */,
+				1F37D3C4923A04A9F590BE5C /* [CP] Embed Pods Frameworks */,
+				B24F69D80D201C591107CBD9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,11 +164,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1F37D3C4923A04A9F590BE5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Jelly_D/Pods-Jelly_D-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Jelly/Jelly.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Jelly.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jelly_D/Pods-Jelly_D-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B24F69D80D201C591107CBD9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Jelly_D/Pods-Jelly_D-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B52E9BBB3BEF413CD4C1922A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Jelly_D-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		784B774B1FEA402A00AA04A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				784B77651FEA429500AA04A8 /* DismissMeController.swift in Sources */,
+				784B77671FEA452E00AA04A8 /* ExampleDataFactory.swift in Sources */,
 				784B77551FEA402A00AA04A8 /* ViewController.swift in Sources */,
 				784B77531FEA402A00AA04A8 /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +361,7 @@
 		};
 		784B77621FEA402A00AA04A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 983379513532BC80C90ACB6B /* Pods-Jelly_D.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -286,6 +376,7 @@
 		};
 		784B77631FEA402A00AA04A8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 70C58B4EDC4D23A2D20BF595 /* Pods-Jelly_D.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
