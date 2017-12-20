@@ -8,6 +8,7 @@
 
 import UIKit
 import Jelly
+import SwiftyButton
 
 class ViewController: UIViewController {
     fileprivate var jellyAnimator: JellyAnimator?
@@ -17,11 +18,14 @@ class ViewController: UIViewController {
     fileprivate lazy var model : [DataObject] = {
         return ExampleDataProvider().data
     }()
-    var btn:UIButton!
+    var btn:PressableButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        btn = UIButton(frame: CGRect(x: 50, y: 200, width: 100, height: 100))
-        btn.backgroundColor = UIColor.purple
+        btn = PressableButton(frame: CGRect(x: 50, y: 200, width: 300, height: 70))
+        btn.colors = .init(button: .orange, shadow: .red)
+        btn.setTitle("Press me", for: .normal)
+        btn.cornerRadius  = 10
         btn.addTarget(self, action: #selector(self.click), for: .touchUpInside)
         self.view.addSubview(btn)
         
@@ -46,7 +50,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
+
 }
 
